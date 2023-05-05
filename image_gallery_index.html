@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="short cut icon" href="images/mc-logo.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="image_gallery_main.css">
+
+    <title>Image Gallery</title>
+
+</head>
+<body>
+    <header>
+        <img src="image_gallery_images/logo.webp" alt="Logo Image">
+        <h2>80's Hair Metal and Rock Image Gallery</h2>
+
+        <nav id="navigation">
+          <ul>
+              <li><a href="home_index.html">Home</a></li>
+              <li><a href="image_gallery_index.html">Image Gallery</a></li>
+              <li><a href="video_gallery_index.html">Video Gallery</a></li>
+              <li><a href="slideshow_index.html">Image Carousel</a></li>
+          </ul>
+      </nav>
+    </header>
+
+    <main>
+
+    <!-- Photo Grid -->
+    <div class="row"> 
+      <div class="column">
+        <img src="image_gallery_images/GettyImages-870173316.jpeg" style="width:100%">
+        <img src="image_gallery_images/fp1.jpeg" style="width:100%">
+        <img src="image_gallery_images/fp2.jpeg" style="width:100%">
+        <img src="image_gallery_images/fp3.webp" style="width:100%">
+        <img src="image_gallery_images/fp4.jpeg" style="width:100%">
+        <img src="image_gallery_images/fp20.jpeg" style="width:100%">
+        <img src="image_gallery_images/fp21.jpeg" style="width:100%">
+      </div>
+      
+      <div class="column">
+        <img src="image_gallery_images/fp5.jpeg" style="width:100%">
+        <img src="image_gallery_images/fp6.jpeg" style="width:100%">
+        <img src="image_gallery_images/fp7.jpeg" style="width:100%">
+        <img src="image_gallery_images/fp8.jpeg" style="width:100%">
+        <img src="image_gallery_images/fp9.jpeg" style="width:100%">
+        <img src="image_gallery_images/fp22.jpeg" style="width:100%">
+      </div> 
+       
+      <div class="column">
+        <img src="image_gallery_images/fp10.jpeg" style="width:100%">
+        <img src="image_gallery_images/fp11.jpeg" style="width:100%">
+        <img src="image_gallery_images/fp12.jpeg" style="width:100%">
+        <img src="image_gallery_images/fp13.jpeg" style="width:100%">
+        <img src="image_gallery_images/fp14.jpeg" style="width:100%">
+      </div>
+      
+      <div class="column">
+        <img src="image_gallery_images/fp15.jpeg" style="width:100%">
+        <img src="image_gallery_images/fp16.png" style="width:100%">
+        <img src="image_gallery_images/fp17.webp" style="width:100%">
+        <img src="image_gallery_images/fp18.jpeg" style="width:100%">
+        <img src="image_gallery_images/fp19.webp" style="width:100%">
+        
+      </div>
+    </div>
+    
+    
+    </main>
+
+    <footer>
+        <p>&copy; <span id="copyright"></span> Jackson Dailey</p>
+    </footer>
+
+     <!-- Javascript - Get Current Year for the Footer -->
+     <script>
+        window.onload = function() {
+            var d = new Date();
+            document.getElementById("copyright").innerHTML = d.getFullYear();
+        }
+    </script>
+
+</body>
+</html>

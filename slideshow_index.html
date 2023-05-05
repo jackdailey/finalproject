@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="slideshow_style.css">
+
+    <title>80's Hair Metal and Rock Slideshow</title>
+</head>
+<body>
+    
+    <header>
+        <img src="slideshow_images/logo.webp" alt="">
+        <h2>80's Hair Metal and Rock Slideshow</h2>
+
+        <nav id="navigation">
+            <ul>
+                <li><a href="home_index.html">Home</a></li>
+                <li><a href="image_gallery_index.html">Image Gallery</a></li>
+                <li><a href="video_gallery_index.html">Video Gallery</a></li>
+                <li><a href="slideshow_index.html">Image Carousel</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="imagecarousel">
+                <div class="image fadeout"><img src="slideshow_images/1200x0.jpeg" alt=""></div>
+                <div class="image fadeout"><img src="slideshow_images/e9956ba9edfdbb34e0be44222bc5f47cd8534ee4.jpeg" alt=""></div>
+                <div class="image fadeout"><img src="slideshow_images/kiss.webp" alt=""></div>
+                <div class="image fadeout"><img src="slideshow_images/motley-crue-getty.jpeg" alt=""></div>
+                <div class="image fadeout"><img src="slideshow_images/pyromania-1-web-1000-optimised-1000x600.jpeg" alt=""></div>
+
+                <div class="prev" onclick="showImage(-1)" ><i class="fa-solid fa-angles-left"></i></div>
+                <div class="next" onclick="showImage(1)" ><i class="fa-solid fa-angles-right"></i></div>
+            </div>
+            
+        </div>
+        <div class="dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="copyright"></span>Jackson Dailey</p>
+    </footer>
+
+
+
+
+    <script src="slideshow_scripts.js"></script>
+
+</body>
+</html>
